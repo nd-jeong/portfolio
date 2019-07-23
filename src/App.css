@@ -1,33 +1,105 @@
-.App {
-  text-align: center;
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #2f2f2f;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.header-container {
+    padding: 10px 0;
+    color: white;
+    background: #2f2f2f;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 5px solid white;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.intro-cursor {
+    color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.intro-text {
+    color: white;
+    font-size: 36px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 15% 0;
+    line-height: 1.8em;
+    font-family: 'Roboto Mono', monospace;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.intro-text p {
+    margin: 0;
+}
+
+.logo {
+    width: 100px;
+    margin: 0 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-block;
+    position: relative;
+}
+
+.nav-link::after {
+    position: absolute;
+    top: 40px;
+    background: #2f2f2f;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    left:calc(50% - 4px);
+    transition-duration: 2s;
+}
+
+.nav-link:hover::after {
+    content: "";
+    position: absolute;
+    top: 40px;
+    background: white;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    left:calc(50% - 4px);
+}
+
+.nav-link-selected {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-block;
+    position: relative;
+}
+
+.nav-link-selected:after {
+    content: "";
+    position: absolute;
+    top: 40px;
+    background: white;
+    width: 30px;
+    height: 5px;
+    border-radius: 15%;
+    left:calc(50% - 13px);
+}
+
+.nav-link-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    width: 500px;
+    margin: auto;
+}
+
+.nav-link-container li {
+    text-decoration: none;
 }
