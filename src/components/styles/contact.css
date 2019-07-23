@@ -25,6 +25,11 @@
 
 .social-media-icon {
     height: 50px;
+    transition-duration: 0.4s;
+}
+
+.social-media-icon:hover {
+    opacity: 0.5;
 }
 
 .social-media-wraper {
