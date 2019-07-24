@@ -21,6 +21,11 @@
     text-align: center;
 }
 
+.profile-picture {
+    background-size: cover;
+    border-radius: 50%;
+}
+
 .resume-link {
     text-decoration: none;
     color: gray;
