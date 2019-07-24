@@ -53,9 +53,13 @@
     display: flex;
 }
 
+.project-description {
+    margin: 3% 5%;
+    line-height: 1.6em;
+}
+
 .project-skills-container {
     display: flex;
-    
 }
 
 .project-skills-container p {

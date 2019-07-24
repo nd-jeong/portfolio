@@ -14,7 +14,9 @@ function Projects() {
                     <p>CSS</p>
                     <p>JavaScript</p>
                 </div>
-                <p>Project 1 description</p>
+                <div>
+                    <p className='project-description'>This is a simple Flappy Bird clone using HTML Canvas for the game board and collision detection. The score keeping, gravity, and insane mode were added using JavaScript.</p>
+                </div>
             </div>
             <div className='project-container'>
                 <h3>NBA React App</h3>
@@ -27,7 +29,10 @@ function Projects() {
                     <p>AJAX</p>
                     <p>JavaScript</p>
                 </div>
-                <p>Project 2 description</p>
+                <div>
+                    <p className='project-description'>I created this web app to keep track of teams and players in the NBA. Users can view small blurbs describing each team and player as well as additional info for players such as height, weight, and university attended.</p> 
+                    <p className='project-description'>This app uses AJAX to request data from two APIs and uses React to render the components and data.</p>
+                </div>
             </div>
             <div className='project-container'>
                 <h3>Digital Penny Pincher</h3>
@@ -38,9 +43,12 @@ function Projects() {
                     <p>React</p>
                     <p>JavaScript</p>
                     <p>CSS</p>
-                    <p>PSQL</p>
+                    <p>Sequelize</p>
                 </div>
-                <p>Project 3 description</p>
+                <div>
+                    <p className='project-description'>This app was designed to keep track of a users spending habits. They can simply enter a transaction amount and select a transaction type which will automatically update their current and remaining balance. The user is also able to view percentages of their spending as well as sort through all of their transactions by type.</p> 
+                    <p className='project-description'>The database for this full-stack app was built using Sequelize. Sequelize was also used to create all CRUD requests and the front end was created using React. The dashboard component re-renders everytime a transaction is added, so the total balance and remaining budget is always up to date.</p>
+                </div>
             </div>
         </div>
     )
