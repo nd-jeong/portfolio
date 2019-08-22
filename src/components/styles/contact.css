@@ -42,3 +42,7 @@
 .social-media-wraper {
     margin: 50px;
 }
+
+@media all and (max-width: 600px) {
+    
+}

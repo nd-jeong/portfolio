@@ -40,3 +40,10 @@
     background: gray;
     border: 2px solid white;
 }
+
+@media all and (max-width: 600px) {
+    .brand-statement-container {
+        margin: 5px 5px;
+        width: 80%;
+    }
+}

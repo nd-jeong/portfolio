@@ -103,3 +103,9 @@ body {
 .nav-link-container li {
     text-decoration: none;
 }
+
+@media all and (max-width: 600px) {
+    .nav-link-container {
+        width: 300px;
+    }
+}
